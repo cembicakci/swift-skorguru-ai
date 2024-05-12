@@ -16,35 +16,35 @@ struct RequestBody: Codable {
 @MainActor
 class HomeViewModel: ObservableObject {
     
-    @Published var matchData: [MatchData] = []
+    @Published var matchData: [Response] = []
     @Published var infoData: [Info] = []
+    @Published var selectedDate = Date()
+    @Published var isLoading = true
     
-    @State var date = "2024-12-12"
+    
     @State var type = "0"
     
-    init() {
-        Task {
-            await fetchData()
-        }
-    }
-    
-    
-    func fetchData() async {
-        do {
-            
         
-            let jsonData = try JSONEncoder().encode(RequestBody(date: date, type: type))
+    func fetchData() async {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        let formattedDate = dateFormatter.string(from: selectedDate)
+        
+        do {
+            let jsonData = try JSONEncoder().encode(RequestBody(date: formattedDate, type: type))
             
             let endpoint = MockEndpointProtocol(path: "matchs", httpMethod: .post, body: jsonData)
             let response: MatchResponse = try await NetworkManager.shared.request(endpoint)
-            print(response)
             
             self.matchData = response.response
+            self.infoData = response.info
+            
         } catch {
             // Handle error
             print("Error fetching data: \(error)")
         }
         
+        self.isLoading = false
     }
     
 }
