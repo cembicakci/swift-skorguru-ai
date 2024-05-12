@@ -13,6 +13,12 @@
 		E5B950F12BEBFD92004BC522 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B950F02BEBFD92004BC522 /* TabBar.swift */; };
 		E5B950FB2BEBFFE4004BC522 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B950FA2BEBFFE4004BC522 /* HomeView.swift */; };
 		E5B950FF2BEC0029004BC522 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B950FE2BEC0029004BC522 /* ProfileView.swift */; };
+		E5B951022BECDCAF004BC522 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B951012BECDCAF004BC522 /* NetworkError.swift */; };
+		E5B951042BECDDB5004BC522 /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B951032BECDDB4004BC522 /* HttpMethods.swift */; };
+		E5B951062BECDE0A004BC522 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B951052BECDE0A004BC522 /* EndpointProtocol.swift */; };
+		E5B951082BECDE20004BC522 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B951072BECDE20004BC522 /* NetworkManager.swift */; };
+		E5B9510A2BECDE93004BC522 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B951092BECDE93004BC522 /* HomeViewModel.swift */; };
+		E5B9510C2BECE1C7004BC522 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9510B2BECE1C7004BC522 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		E5B950F02BEBFD92004BC522 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		E5B950FA2BEBFFE4004BC522 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E5B950FE2BEC0029004BC522 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E5B951012BECDCAF004BC522 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E5B951032BECDDB4004BC522 /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
+		E5B951052BECDE0A004BC522 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		E5B951072BECDE20004BC522 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E5B951092BECDE93004BC522 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E5B9510B2BECE1C7004BC522 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				E5B950FA2BEBFFE4004BC522 /* HomeView.swift */,
+				E5B951092BECDE93004BC522 /* HomeViewModel.swift */,
+				E5B9510B2BECE1C7004BC522 /* Model.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -125,6 +139,10 @@
 		E5B951002BECDC70004BC522 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E5B951012BECDCAF004BC522 /* NetworkError.swift */,
+				E5B951032BECDDB4004BC522 /* HttpMethods.swift */,
+				E5B951052BECDE0A004BC522 /* EndpointProtocol.swift */,
+				E5B951072BECDE20004BC522 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -200,9 +218,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5B950FF2BEC0029004BC522 /* ProfileView.swift in Sources */,
+				E5B9510A2BECDE93004BC522 /* HomeViewModel.swift in Sources */,
 				E5B950FB2BEBFFE4004BC522 /* HomeView.swift in Sources */,
 				E5B950F12BEBFD92004BC522 /* TabBar.swift in Sources */,
+				E5B951062BECDE0A004BC522 /* EndpointProtocol.swift in Sources */,
+				E5B9510C2BECE1C7004BC522 /* Model.swift in Sources */,
+				E5B951082BECDE20004BC522 /* NetworkManager.swift in Sources */,
 				E5B950E02BEBFA7D004BC522 /* skorguruApp.swift in Sources */,
+				E5B951042BECDDB5004BC522 /* HttpMethods.swift in Sources */,
+				E5B951022BECDCAF004BC522 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

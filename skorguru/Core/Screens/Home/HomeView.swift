@@ -25,6 +25,8 @@ struct HomeView: View {
         League(id: 4, name: "Ligue 1")
     ]
     
+    @StateObject private var viewModel = HomeViewModel()
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -47,6 +49,11 @@ struct HomeView: View {
                     }
                     .datePickerStyle(.automatic)
                     .labelsHidden()
+                }
+            }
+            .onAppear {
+                Task {
+                    await viewModel.fetchData()
                 }
             }
         }
