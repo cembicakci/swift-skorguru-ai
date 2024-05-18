@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E54044B92BF8FB520062F0EA /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54044B82BF8FB510062F0EA /* LogoView.swift */; };
+		E54044BB2BF8FE8A0062F0EA /* StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54044BA2BF8FE8A0062F0EA /* StatusBadge.swift */; };
 		E5B950E02BEBFA7D004BC522 /* skorguruApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B950DF2BEBFA7D004BC522 /* skorguruApp.swift */; };
 		E5B950E42BEBFA7E004BC522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B950E32BEBFA7E004BC522 /* Assets.xcassets */; };
 		E5B950E72BEBFA7E004BC522 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5B950E62BEBFA7E004BC522 /* Preview Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E54044B82BF8FB510062F0EA /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		E54044BA2BF8FE8A0062F0EA /* StatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadge.swift; sourceTree = "<group>"; };
 		E5B950DC2BEBFA7D004BC522 /* skorguru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skorguru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5B950DF2BEBFA7D004BC522 /* skorguruApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skorguruApp.swift; sourceTree = "<group>"; };
 		E5B950E32BEBFA7E004BC522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E54044B72BF8FB420062F0EA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E54044B82BF8FB510062F0EA /* LogoView.swift */,
+				E54044BA2BF8FE8A0062F0EA /* StatusBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E5B950D32BEBFA7D004BC522 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +100,7 @@
 		E5B950ED2BEBFAFE004BC522 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				E54044B72BF8FB420062F0EA /* Components */,
 				E5B950F22BEBFF83004BC522 /* Screens */,
 				E5B950EF2BEBFD87004BC522 /* TabBar */,
 			);
@@ -219,6 +233,7 @@
 			files = (
 				E5B950FF2BEC0029004BC522 /* ProfileView.swift in Sources */,
 				E5B9510A2BECDE93004BC522 /* HomeViewModel.swift in Sources */,
+				E54044B92BF8FB520062F0EA /* LogoView.swift in Sources */,
 				E5B950FB2BEBFFE4004BC522 /* HomeView.swift in Sources */,
 				E5B950F12BEBFD92004BC522 /* TabBar.swift in Sources */,
 				E5B951062BECDE0A004BC522 /* EndpointProtocol.swift in Sources */,
@@ -227,6 +242,7 @@
 				E5B950E02BEBFA7D004BC522 /* skorguruApp.swift in Sources */,
 				E5B951042BECDDB5004BC522 /* HttpMethods.swift in Sources */,
 				E5B951022BECDCAF004BC522 /* NetworkError.swift in Sources */,
+				E54044BB2BF8FE8A0062F0EA /* StatusBadge.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -41,7 +41,32 @@ struct HomeView: View {
                     
                     List {
                         ForEach(viewModel.matchData[selectedLeague].matchs, id:\.id) { match in
-                            Text(match.homeTeam)
+                            HStack() {
+                                VStack() {
+                                    LogoView(logoUrl: match.homeTeamLogo)
+                                    Text(match.homeTeam)
+                                }
+                                Spacer()
+                                
+                                VStack() {
+                                    
+                                    if match.status.rawValue == "Tamamlandı" {
+                                        StatusBadge(text: "Tamamlandı", type: .success)
+                                    } else {
+                                        Text("\(match.matchDate)")
+                                    }
+                                    
+                                    
+                                }
+                                
+                                Spacer()
+                                
+                                VStack() {
+                                    LogoView(logoUrl: match.awayTeamLogo)
+                                    Text(match.awayTeam)
+                                }
+                                
+                            }
                         }
                     }
                     
